@@ -1,6 +1,6 @@
 İşte Lenovo Vantage for Linux için bir README dosyası taslağı:
 
-```markdown
+
 # Lenovo Vantage for Linux
 
 Lenovo Vantage for Linux, Lenovo dizüstü bilgisayarlar için GNOME masaüstü ortamında çalışan bir yardımcı programdır. Bu araç, donanım özelliklerinizi yönetmenizi ve izlemeyi sağlar.
