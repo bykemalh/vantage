@@ -1,0 +1,17 @@
+<svg width="270" height="270" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background Shapes -->
+  <rect width="270" height="270" fill="#4CBED7"/>
+  <polygon points="0,0 270,0 270,135" fill="#3899BD"/>
+  <polygon points="0,270 270,270 270,135" fill="#3294C2"/>
+  <polygon points="0,0 0,270 135,270" fill="#46AAD1"/>
+
+  <!-- Dark Blue Triangle for 3D Effect -->
+  <polygon points="110,200 90,60 60,220 180,200" fill="#1A3970"/>
+
+  <!-- Letter 'L' -->
+  <polygon points="90,60 130,60 130,170 190,170 190,200 90,200" fill="#FFFFFF"/>
+
+  <!-- Text -->
+  <text x="18%" y="97%" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#FFFFFF" text-anchor="middle">for Linux</text>
+</svg>

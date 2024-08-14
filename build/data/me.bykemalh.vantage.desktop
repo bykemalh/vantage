@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=lenovo-vantage
+Exec=lenovo-vantage
+Icon=me.bykemalh.vantage
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

@@ -1,0 +1,6 @@
+data/me.bykemalh.vantage.desktop.in
+data/me.bykemalh.vantage.metainfo.xml.in
+data/me.bykemalh.vantage.gschema.xml
+src/main.c
+src/lenovo-vantage-window.c
+src/lenovo-vantage-window.ui

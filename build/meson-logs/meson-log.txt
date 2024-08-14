@@ -1,0 +1,833 @@
+Build started at 2024-08-04T23:27:29.187243
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.4.1
+Source dir: /home/bykemalh/Projects/Lenovo-Vantage
+Build dir: /home/bykemalh/Projects/Lenovo-Vantage/build
+Build type: native build
+Project name: lenovo-vantage
+Project version: 1.1.0
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 14.1.1 20240701 (Red Hat 14.1.1-7)
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: cc -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld version 2.41-37.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 14.1.1 20240701 (Red Hat 14.1.1-7)
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNfUA9t.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 14.1.1 "cc (GCC) 14.1.1 20240701 (Red Hat 14.1.1-7)")
+C linker for the host machine: cc ld.bfd 2.41-37
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar version 2.41-37.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 14.1.1 20240701 (Red Hat 14.1.1-7)
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: cc -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld version 2.41-37.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 14.1.1 20240701 (Red Hat 14.1.1-7)
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8DMa9h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/14 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/14/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 14.1.1 "cc (GCC) 14.1.1 20240701 (Red Hat 14.1.1-7)")
+C linker for the build machine: cc ld.bfd 2.41-37
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar version 2.41-37.fc40
+Copyright (C) 2023 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Configuring config.h using configuration
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpcohan3t0
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpcohan3t0/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpcohan3t0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-align` -> 0
+Compiler for C supports arguments -Wcast-align: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp9yrxeb52
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp9yrxeb52/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp9yrxeb52/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement` -> 0
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyludve43
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyludve43/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyludve43/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=address` -> 0
+Compiler for C supports arguments -Werror=address: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp69s4u37l
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp69s4u37l/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp69s4u37l/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=array-bounds` -> 0
+Compiler for C supports arguments -Werror=array-bounds: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpsykpxpmq
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpsykpxpmq/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpsykpxpmq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=empty-body` -> 0
+Compiler for C supports arguments -Werror=empty-body: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyfhb1611
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyfhb1611/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyfhb1611/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit` -> 0
+Compiler for C supports arguments -Werror=implicit: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmptr6_ezzk
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmptr6_ezzk/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmptr6_ezzk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration` -> 0
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp5nj0l9t9
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp5nj0l9t9/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp5nj0l9t9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=incompatible-pointer-types` -> 0
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmppzxpap3k
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmppzxpap3k/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmppzxpap3k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=init-self` -> 0
+Compiler for C supports arguments -Werror=init-self: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpql8q50fj
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpql8q50fj/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpql8q50fj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=int-conversion` -> 0
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyvq9hvas
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyvq9hvas/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyvq9hvas/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=int-to-pointer-cast` -> 0
+Compiler for C supports arguments -Werror=int-to-pointer-cast: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyu_vk0ll
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyu_vk0ll/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpyu_vk0ll/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=main` -> 0
+Compiler for C supports arguments -Werror=main: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpiw_v7jua
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpiw_v7jua/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpiw_v7jua/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=misleading-indentation` -> 0
+Compiler for C supports arguments -Werror=misleading-indentation: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp1cihliar
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp1cihliar/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp1cihliar/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-braces` -> 0
+Compiler for C supports arguments -Werror=missing-braces: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4cm7rmt1
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4cm7rmt1/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4cm7rmt1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-include-dirs` -> 0
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmppw44_g9u
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmppw44_g9u/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmppw44_g9u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=nonnull` -> 0
+Compiler for C supports arguments -Werror=nonnull: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwcp2hzum
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwcp2hzum/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwcp2hzum/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=overflow` -> 0
+Compiler for C supports arguments -Werror=overflow: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpy5cj__0_
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpy5cj__0_/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpy5cj__0_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=parenthesis` -> 1
+stderr:
+cc1: error: '-Werror=parenthesis': no option '-Wparenthesis'; did you mean '-Wparentheses'?
+-----------
+Compiler for C supports arguments -Werror=parenthesis: NO 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmprnw0tj3f
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmprnw0tj3f/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmprnw0tj3f/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-arith` -> 0
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpmdg8jb19
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpmdg8jb19/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpmdg8jb19/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-to-int-cast` -> 0
+Compiler for C supports arguments -Werror=pointer-to-int-cast: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpsp8mdm6j
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpsp8mdm6j/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpsp8mdm6j/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=redundant-decls` -> 0
+Compiler for C supports arguments -Werror=redundant-decls: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpjsgkmjnr
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpjsgkmjnr/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpjsgkmjnr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=return-type` -> 0
+Compiler for C supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmptunsupy0
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmptunsupy0/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmptunsupy0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=sequence-point` -> 0
+Compiler for C supports arguments -Werror=sequence-point: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxeouia8
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxeouia8/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxeouia8/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=shadow` -> 0
+Compiler for C supports arguments -Werror=shadow: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpvhb4ekmh
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpvhb4ekmh/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpvhb4ekmh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=strict-prototypes` -> 0
+Compiler for C supports arguments -Werror=strict-prototypes: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxo_r8lv
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxo_r8lv/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxo_r8lv/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=trigraphs` -> 0
+Compiler for C supports arguments -Werror=trigraphs: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpub4lrdni
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpub4lrdni/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpub4lrdni/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=undef` -> 0
+Compiler for C supports arguments -Werror=undef: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp2kqyb4km
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp2kqyb4km/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp2kqyb4km/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=write-strings` -> 0
+Compiler for C supports arguments -Werror=write-strings: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4qchvp9_
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4qchvp9_/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4qchvp9_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral` -> 0
+stderr:
+cc1: warning: '-Wformat-nonliteral' ignored without '-Wformat' [-Wformat-nonliteral]
+-----------
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpu26ydbjw
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpu26ydbjw/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpu26ydbjw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wignored-qualifiers` -> 0
+Compiler for C supports arguments -Wignored-qualifiers: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpmwqw80kv
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpmwqw80kv/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpmwqw80kv/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-function-declaration` -> 0
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp7gqdhl82
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp7gqdhl82/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp7gqdhl82/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wlogical-op` -> 0
+Compiler for C supports arguments -Wlogical-op: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmphxk__if9
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmphxk__if9/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmphxk__if9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations` -> 0
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpap5077b5
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpap5077b5/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpap5077b5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-format-attribute` -> 0
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp_4d5q20z
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp_4d5q20z/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp_4d5q20z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-include-dirs` -> 0
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4urihp2k
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4urihp2k/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp4urihp2k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-noreturn` -> 0
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpv7lua9ne
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpv7lua9ne/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpv7lua9ne/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs` -> 0
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpldv4q7fs
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpldv4q7fs/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpldv4q7fs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-function-type -Wno-cast-function-type` -> 0
+Compiler for C supports arguments -Wno-cast-function-type: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpn5e78az0
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpn5e78az0/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpn5e78az0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdangling-pointer -Wno-dangling-pointer` -> 0
+Compiler for C supports arguments -Wno-dangling-pointer: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxid6blr
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxid6blr/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwxid6blr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers -Wno-missing-field-initializers` -> 0
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp23ld_txg
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp23ld_txg/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp23ld_txg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare -Wno-sign-compare` -> 0
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpm_gf1mf6
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpm_gf1mf6/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpm_gf1mf6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter -Wno-unused-parameter` -> 0
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp0i_rgx83
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp0i_rgx83/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp0i_rgx83/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition` -> 0
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp04tupvzf
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp04tupvzf/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp04tupvzf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith` -> 0
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpy04njikk
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpy04njikk/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpy04njikk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wredundant-decls` -> 0
+Compiler for C supports arguments -Wredundant-decls: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwz6u4x5n
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwz6u4x5n/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpwz6u4x5n/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes` -> 0
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp10a5nk6h
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp10a5nk6h/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp10a5nk6h/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wswitch-default` -> 0
+Compiler for C supports arguments -Wswitch-default: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpaem7x37d
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpaem7x37d/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpaem7x37d/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wswitch-enum` -> 0
+Compiler for C supports arguments -Wswitch-enum: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpw7jnwp4h
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpw7jnwp4h/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpw7jnwp4h/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wundef` -> 0
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpj24wxnxa
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpj24wxnxa/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpj24wxnxa/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wuninitialized` -> 0
+Compiler for C supports arguments -Wuninitialized: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmps_p7r_n7
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmps_p7r_n7/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmps_p7r_n7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused` -> 0
+Compiler for C supports arguments -Wunused: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp8wye1vtc
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp8wye1vtc/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmp8wye1vtc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fno-strict-aliasing` -> 0
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmphz8kojzs
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmphz8kojzs/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmphz8kojzs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=format-security -Werror=format=2` -> 0
+Compiler for C supports arguments -Werror=format-security -Werror=format=2: YES 
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpzoi5d__y
+Code:
+ extern int i;
+int i;
+
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpzoi5d__y/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpzoi5d__y/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-strong` -> 0
+Compiler for C supports arguments -fstack-protector-strong: YES 
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Adding test "Validate desktop file"
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Adding test "Validate appstream file"
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Adding test "Validate schema file"
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 2.1.1
+Determining dependency 'gtk4' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gtk4` -> 0
+stdout:
+4.14.4
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gtk4` -> 0
+stdout:
+-I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/graphene-1.0 -I/usr/lib64/graphene-1.0/include -mfpmath=sse -msse -msse2 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/fribidi -I/usr/include/webp -pthread -DWITH_GZFILEOP -I/usr/include/libpng16 -I/usr/include/libxml2 -I/usr/include/pixman-1
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk4` -> 0
+stdout:
+-L/usr/lib64 -lgtk-4 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lglib-2.0 -lgobject-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk4` -> 0
+stdout:
+-lgtk-4 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lglib-2.0 -lgobject-2.0
+-----------
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpeq9e41yn
+Code:
+ 
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpeq9e41yn/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpeq9e41yn/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpdddxx2fw
+Code:
+ 
+-----------
+Command line: `cc /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpdddxx2fw/testfile.c -o /home/bykemalh/Projects/Lenovo-Vantage/build/meson-private/tmpdddxx2fw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/x86_64-redhat-linux/14/
+programs: =/usr/libexec/gcc/x86_64-redhat-linux/14/:/usr/libexec/gcc/x86_64-redhat-linux/14/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/14/:/usr/lib/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/bin/x86_64-redhat-linux/14/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/bin/
+libraries: =/usr/lib/gcc/x86_64-redhat-linux/14/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/14/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../x86_64-redhat-linux/14/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../../lib64/:/lib/x86_64-redhat-linux/14/:/lib/../lib64/:/usr/lib/x86_64-redhat-linux/14/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/lib/:/usr/lib/gcc/x86_64-redhat-linux/14/../../../:/lib/:/usr/lib/
+-----------
+Run-time dependency gtk4 found: YES 4.14.4
+Determining dependency 'libadwaita-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libadwaita-1` -> 0
+stdout:
+1.5.2
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libadwaita-1` -> 0
+stdout:
+-I/usr/include/libadwaita-1 -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/graphene-1.0 -I/usr/lib64/graphene-1.0/include -mfpmath=sse -msse -msse2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/webp -pthread -DWITH_GZFILEOP -I/usr/include/libpng16 -I/usr/include/libxml2 -I/usr/include/pixman-1 -I/usr/include/fribidi -I/usr/include/appstream
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libadwaita-1` -> 0
+stdout:
+-L/usr/lib64 -ladwaita-1 -lgtk-4 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lglib-2.0 -lgobject-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libadwaita-1` -> 0
+stdout:
+-ladwaita-1 -lgtk-4 -lharfbuzz -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lglib-2.0 -lgobject-2.0
+-----------
+Run-time dependency libadwaita-1 found: YES 1.5.2
+Determining dependency 'x11' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion x11` -> 0
+stdout:
+1.8.10
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags x11` -> 0
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs x11` -> 0
+stdout:
+-L/usr/lib64 -lX11
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs x11` -> 0
+stdout:
+-lX11
+-----------
+Run-time dependency x11 found: YES 1.8.10
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+stdout:
+2.80.3
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-L/usr/lib64 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency gio-2.0 found: YES 2.80.3
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+stdout:
+2.80.3
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-L/usr/lib64 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-lglib-2.0
+-----------
+Dependency gio-2.0 found: YES 2.80.3 (cached)
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_resources gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-resources
+-----------
+Got pkg-config variable glib_compile_resources : /usr/bin/glib-compile-resources
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.80.3 (cached)
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_schemas gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-schemas
+-----------
+Got pkg-config variable glib_compile_schemas : /usr/bin/glib-compile-schemas
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 8
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Failed to guess install tag for /usr/local/share/applications/me.bykemalh.vantage.desktop
+Failed to guess install tag for /usr/local/share/metainfo/me.bykemalh.vantage.metainfo.xml
+Failed to guess install tag for /usr/local/share/glib-2.0/schemas/me.bykemalh.vantage.gschema.xml
+Failed to guess install tag for /usr/local/share/icons/hicolor/scalable/apps/me.bykemalh.vantage.svg
+Failed to guess install tag for /usr/local/share/icons/hicolor/symbolic/apps/me.bykemalh.vantage-symbolic.svg
+Failed to guess install tag for install script: /usr/bin/glib-compile-schemas /usr/local/share/glib-2.0/schemas
+Failed to guess install tag for install script: /usr/bin/gtk4-update-icon-cache -q -t -f /usr/local/share/icons/hicolor
+Failed to guess install tag for install script: /usr/bin/update-desktop-database -q /usr/local/share/applications
+Failed to guess install tag for /usr/local/share/applications/me.bykemalh.vantage.desktop
+Failed to guess install tag for /usr/local/share/metainfo/me.bykemalh.vantage.metainfo.xml
+Failed to guess install tag for /usr/local/share/glib-2.0/schemas/me.bykemalh.vantage.gschema.xml
+Failed to guess install tag for /usr/local/share/icons/hicolor/scalable/apps/me.bykemalh.vantage.svg
+Failed to guess install tag for /usr/local/share/icons/hicolor/symbolic/apps/me.bykemalh.vantage-symbolic.svg
+Failed to guess install tag for install script: /usr/bin/glib-compile-schemas /usr/local/share/glib-2.0/schemas
+Failed to guess install tag for install script: /usr/bin/gtk4-update-icon-cache -q -t -f /usr/local/share/icons/hicolor
+Failed to guess install tag for install script: /usr/bin/update-desktop-database -q /usr/local/share/applications

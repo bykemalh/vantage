@@ -1,0 +1,42 @@
+.thick-level-bar {
+  min-height: 20px;
+  min-width: 200px;
+  margin: 10px;
+}
+.battery-label {
+  margin-left: 10px;
+}
+.thick-level-bar trough {
+  min-height: 20px;
+  min-width: 200px;
+}
+.laptop-info-group .info-row {
+  font-size: 15px;
+}
+.copy-button{
+	padding: 7px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.power-mode-rows{
+	min-width: 350px;
+}
+.keyboard-light-rows{
+	min-width: 350px;
+}
+.device-controls{
+	min-width: 250px;
+}
+.security-button{
+	min-width: 150px;
+}
+.help-button{
+  min-width: 250px;
+  min-height: 30px;
+}
+.help-buttons{
+  min-width: 400px;
+  min-height: 40px;
+  font-size: 12pt;
+  border-radius: 15px;
+}

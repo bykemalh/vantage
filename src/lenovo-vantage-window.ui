@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="Adw" version="1.0"/>
+  <template class="LenovoVantageWindow" parent="AdwApplicationWindow">
+    <property name="default-width">800</property>
+    <property name="default-height">500</property>
+    <property name="title">Lenovo Vantage</property>
+    <property name="content">
+			<object class="AdwToastOverlay" id="toast_overlay">
+			<property name="child">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar">
+						<child type="end">
+              <object class="GtkMenuButton">
+                <property name="primary">True</property>
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Menu</property>
+								<property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <property name="content">
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <child>
+              <object class="GtkStackSidebar" id="sidebar">
+                <property name="stack">main_stack</property>
+                <property name="width-request">200</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStack" id="main_stack">
+                <property name="transition-type">crossfade</property>
+                <child>
+                  <object class="GtkStackPage">
+                    <property name="name">home</property>
+                    <property name="title" translatable="yes">Home</property>
+                    <property name="child">
+                      <object class="GtkScrolledWindow">
+                        <property name="hscrollbar-policy">never</property>
+                        <property name="vscrollbar-policy">automatic</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="halign">center</property>
+                            <property name="orientation">vertical</property>
+                            <property name="margin-start">25</property>
+                            <property name="margin-end">25</property>
+                            <property name="margin-top">25</property>
+                            <property name="margin-bottom">25</property>
+                            <property name="spacing">25</property>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="orientation">horizontal</property>
+                                <property name="spacing">20</property>
+                                <child>
+                                  <object class="AdwPreferencesGroup" id="laptop_info_group">
+                                    <property name="title">Lenovo</property>
+                                    <style>
+                                      <class name="laptop-info-group"/>
+                                    </style>
+                                    <child>
+                                      <object class="AdwActionRow" id="serialn_row">
+                                        <property name="title" translatable="yes">Serial Number:</property>
+																				<child>
+																					<object class="GtkButton" id="copy_serial_btn">
+																						<property name="label" translatable="yes">Copy</property>
+																						<style>
+                                            	<class name="copy-button"/>
+                                        		</style>
+																					</object>
+																				</child>
+																				<child>
+																					<object class="GtkButton" id="show_serial_btn">
+																						<property name="label" translatable="yes">Show</property>
+																						<style>
+                                            	<class name="copy-button"/>
+                                        		</style>
+																					</object>
+																				</child>
+                                        <style>
+                                          <class name="info-row"/>
+                                        </style>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="AdwActionRow" id="modeln_row">
+                                        <property name="title" translatable="yes">Model Number:</property>
+																				<child>
+																					<object class="GtkButton" id="copy_model_btn">
+																						<property name="label" translatable="yes">Copy</property>
+																						<style>
+                                            	<class name="copy-button"/>
+                                        		</style>
+																					</object>
+																				</child>
+                                          <style>
+                                            <class name="info-row"/>
+                                        	</style>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="AdwActionRow" id="biosv_row">
+                                        <property name="title" translatable="yes">BIOS Version:</property>
+																				<child>
+																					<object class="GtkButton" id="copy_bios_btn">
+																						<property name="label" translatable="yes">Copy</property>
+																						<style>
+                                            	<class name="copy-button"/>
+                                        		</style>
+																					</object>
+																				</child>
+																				<style>
+                                            <class name="info-row"/>
+                                        </style>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwPreferencesGroup" id="laptop_usage_group">
+                                    <property name="title" translatable="yes">Usage</property>
+																		<style>
+                                      <class name="laptop-usage-group"/>
+                                    </style>
+																		<child>
+                                      <object class="GtkLabel" id="battery_label">
+                                        <property name="label" translatable="yes">Unknown</property>
+																				<style>
+																					<class name="battery-label"/>
+																				</style>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkLevelBar" id="battery_level_bar">
+                                        <property name="value" translatable="yes">1.0</property>
+																				<style>
+																					<class name="thick-level-bar"/>
+																				</style>
+                                      </object>
+                                    </child>
+																		<child>
+                                      <object class="GtkLabel" id="cpu_label">
+                                        <property name="label" translatable="yes">CPU:</property>
+																				<style>
+																					<class name="cpu-label"/>
+																				</style>
+                                      </object>
+                                    </child>
+																		<child>
+                                      <object class="GtkLevelBar" id="cpu_level_bar">
+                                        <property name="value">0.1</property>
+																				<style>
+																					<class name="thick-level-bar"/>
+																				</style>
+                                      </object>
+                                    </child>
+																		<child>
+                                      <object class="GtkLabel" id="memory_label">
+                                        <property name="label" translatable="yes">Memory:</property>
+																				<style>
+																					<class name="memory-label"/>
+																				</style>
+                                      </object>
+                                    </child>
+																		<child>
+                                      <object class="GtkLevelBar" id="memory_level_bar">
+                                        <property name="value">0.5</property>
+																				<style>
+																					<class name="thick-level-bar"/>
+																				</style>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwPreferencesGroup">
+                                <property name="title" translatable="yes">System Information</property>
+																<style>
+																	<class name="sys-info-box"/>
+																</style>
+                                <child>
+                                  <object class="AdwActionRow" id="os_row">
+                                    <property name="title" translatable="yes">OS:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="host_row">
+                                    <property name="title" translatable="yes">Host:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="kernel_row">
+                                    <property name="title" translatable="yes">Kernel:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="uptime_row">
+                                    <property name="title" translatable="yes">Uptime:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="package_row">
+                                    <property name="title" translatable="yes">Packages:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="shell_row">
+                                    <property name="title" translatable="yes">Shell:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="res_row">
+                                    <property name="title" translatable="yes">Resolution:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="de_row">
+                                    <property name="title" translatable="yes">DE:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="wm_row">
+                                    <property name="title" translatable="yes">WS:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="cpu_row">
+                                    <property name="title" translatable="yes">CPU:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="gpu_row">
+                                    <property name="title" translatable="yes">GPU:</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="AdwActionRow" id="memory_row">
+                                    <property name="title" translatable="yes">Memory:</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+								<child>
+									<object class="GtkStackPage">
+											<property name="name">my_device</property>
+											<property name="title" translatable="yes">My Device</property>
+											<property name="child">
+													<object class="GtkScrolledWindow">
+														  <property name="hscrollbar-policy">never</property>
+														  <property name="min-content-height">400</property>
+														  <property name="child">
+														      <object class="GtkBox">
+														          <property name="orientation">vertical</property>
+														          <property name="valign">start</property>
+														          <property name="vexpand">true</property>
+														          <child>
+														              <object class="GtkBox">
+														                  <property name="orientation">horizontal</property>
+														                  <property name="halign">center</property>
+														                  <property name="hexpand">true</property>
+														                  <property name="spacing">25</property>
+														                  <child>
+														                      <!-- Power Mode ve Keyboard Light Birleştirilmiş Box -->
+														                      <object class="GtkBox">
+														                          <property name="orientation">vertical</property>
+														                          <property name="spacing">20</property>
+														                          <child>
+														                              <object class="GtkLabel">
+														                                  <property name="label" translatable="yes">Power Mode</property>
+														                                  <property name="halign">start</property>
+														                                  <style>
+														                                      <class name="title-4"/>
+														                                  </style>
+														                              </object>
+														                          </child>
+														                          <child>
+														                              <object class="GtkListBox">
+														                                  <property name="selection-mode">none</property>
+														                                  <style>
+														                                      <class name="content"/>
+														                                  </style>
+														                                  <child>
+														                                      <object class="AdwActionRow" id="row1">
+														                                          <property name="title" translatable="yes">Extreme Performance</property>
+														                                          <property name="activatable">true</property>
+														                                          <style>
+														                                              <class name="power-mode-rows"/>
+														                                          </style>
+														                                          <child type="prefix">
+														                                              <object class="GtkCheckButton" id="radio1">
+														                                                  <property name="active" translatable="yes">true</property>
+														                                              </object>
+														                                          </child>
+														                                      </object>
+														                                  </child>
+														                                  <child>
+														                                      <object class="AdwActionRow" id="row2">
+														                                          <property name="title" translatable="yes">Intelligent Cooling</property>
+														                                          <property name="activatable">true</property>
+														                                          <style>
+														                                              <class name="power-mode-rows"/>
+														                                          </style>
+														                                          <child type="prefix">
+														                                              <object class="GtkCheckButton" id="radio2">
+														                                                  <property name="group">radio1</property>
+														                                              </object>
+														                                          </child>
+														                                      </object>
+														                                  </child>
+														                                  <child>
+														                                      <object class="AdwActionRow" id="row3">
+														                                          <property name="title" translatable="yes">Battery Saver</property>
+														                                          <property name="activatable">true</property>
+														                                          <style>
+														                                              <class name="power-mode-rows"/>
+														                                          </style>
+														                                          <child type="prefix">
+														                                              <object class="GtkCheckButton" id="radio3">
+														                                                  <property name="group">radio1</property>
+														                                              </object>
+														                                          </child>
+														                                      </object>
+														                                  </child>
+														                              </object>
+														                          </child>
+														                          <!-- Ayırıcı eklendi -->
+														                          <child>
+																													<object class="GtkBox">
+																															<property name="height-request">0</property>
+																															<style>
+																																	<class name="spacer"/>
+																															</style>
+																													</object>
+																											</child>
+														                          <!-- Keyboard Light seçenekleri -->
+														                          <child>
+														                              <object class="GtkLabel">
+														                                  <property name="label" translatable="yes">Keyboard Light</property>
+														                                  <property name="halign">start</property>
+														                                  <style>
+														                                      <class name="title-4"/>
+														                                  </style>
+														                              </object>
+														                          </child>
+														                          <child>
+														                              <object class="GtkListBox">
+														                                  <property name="selection-mode">none</property>
+														                                  <style>
+														                                      <class name="content"/>
+														                                  </style>
+														                                  <child>
+														                                      <object class="AdwActionRow" id="row4">
+														                                          <property name="title" translatable="yes">Off</property>
+														                                          <property name="activatable">true</property>
+														                                          <style>
+														                                              <class name="keyboard-light-rows"/>
+														                                          </style>
+														                                          <child type="prefix">
+														                                              <object class="GtkCheckButton" id="radio4">
+														                                                  <property name="active">true</property>
+														                                              </object>
+														                                          </child>
+														                                      </object>
+														                                  </child>
+														                                  <child>
+														                                      <object class="AdwActionRow" id="row5">
+														                                          <property name="title" translatable="yes">Low</property>
+														                                          <property name="activatable">true</property>
+														                                          <style>
+														                                              <class name="keyboard-light-rows"/>
+														                                          </style>
+														                                          <child type="prefix">
+														                                              <object class="GtkCheckButton" id="radio5">
+														                                                  <property name="group">radio4</property>
+														                                              </object>
+														                                          </child>
+														                                      </object>
+														                                  </child>
+														                                  <child>
+														                                      <object class="AdwActionRow" id="row6">
+														                                          <property name="title" translatable="yes">High</property>
+														                                          <property name="activatable">true</property>
+														                                          <style>
+														                                              <class name="keyboard-light-rows"/>
+														                                          </style>
+														                                          <child type="prefix">
+														                                              <object class="GtkCheckButton" id="radio6">
+														                                                  <property name="group">radio4</property>
+														                                              </object>
+														                                          </child>
+														                                      </object>
+														                                  </child>
+														                              </object>
+														                          </child>
+														                      </object>
+														                  </child>
+														                  <!-- Yeni Box - Wi-Fi ve Mikrofon için -->
+														                  <child>
+																								<object class="GtkBox">
+																										<property name="orientation">vertical</property>
+																										<property name="spacing">20</property>
+																										<child>
+																												<object class="GtkLabel">
+																														<property name="label" translatable="yes">Device Controls</property>
+																														<property name="halign">start</property>
+																														<style>
+																																<class name="title-4"/>
+																														</style>
+																												</object>
+																										</child>
+																										<child>
+																												<object class="GtkListBox">
+																														<property name="selection-mode">none</property>
+																														<style>
+																																<class name="content"/>
+																														</style>
+																														<child>
+																																<object class="AdwActionRow" id="wifi_row">
+																																		<property name="title" translatable="yes">Wi-Fi</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="wifi_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																														<child>
+																																<object class="AdwActionRow" id="mic_row">
+																																		<property name="title" translatable="yes">Microphone</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="mic_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																														<child>
+																																<object class="AdwActionRow" id="camera_row">
+																																		<property name="title" translatable="yes">Camera</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="camera_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																														<child>
+																																<object class="AdwActionRow" id="conservation_mode_row">
+																																		<property name="title" translatable="yes">Conservation Mode</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="conservation_mode_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																														<child>
+																																<object class="AdwActionRow" id="always_on_usb_row">
+																																		<property name="title" translatable="yes">Always-On USB</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="always_on_usb_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																														<child>
+																																<object class="AdwActionRow" id="fn_lock_row">
+																																		<property name="title" translatable="yes">FN Lock</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="fn_lock_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																														<child>
+																																<object class="AdwActionRow" id="touchpad_row">
+																																		<property name="title" translatable="yes">Touchpad</property>
+																																		<property name="activatable">true</property>
+																																		<style>
+																																				<class name="device-controls"/>
+																																		</style>
+																																		<child>
+																																				<object class="GtkSwitch" id="touchpad_switch">
+																																						<property name="valign">center</property>
+																																				</object>
+																																		</child>
+																																</object>
+																														</child>
+																												</object>
+																										</child>
+																								</object>
+																						</child>
+														              </object>
+														          </child>
+														      </object>
+														  </property>
+													</object>
+											</property>
+									</object>
+								</child>
+                <child>
+									<object class="GtkStackPage">
+											<property name="name">security</property>
+											<property name="title" translatable="yes">Security</property>
+											<property name="child">
+													<object class="AdwNavigationView">
+															<child>
+																	<object class="AdwNavigationPage">
+																		<property name="title">Security</property>
+																		  <property name="child">
+																		      <object class="AdwToolbarView">
+																		          <child type="top">
+																		              <object class="AdwHeaderBar">
+																											<property name="show-start-title-buttons">false</property>
+																											<property name="show-end-title-buttons">false</property>
+																									</object>
+																		          </child>
+																		          <property name="content">
+																		              <object class="AdwStatusPage">
+																		                  <property name="icon-name">security-high-symbolic</property>
+																		                  <property name="title" translatable="yes">Security? It's a standard feature in Linux.</property>
+																		                  <property name="description" translatable="yes">The only thing you need to worry about in Linux is which distribution to choose.</property>
+																		                  <child>
+																		                      <object class="GtkBox">
+																		                          <property name="orientation">vertical</property>
+																		                          <property name="halign">center</property>
+																		                          <property name="valign">center</property>
+																		                          <property name="margin-start">1</property>
+																		                          <property name="margin-end">1</property>
+																		                          <property name="margin-top">1</property>
+																		                          <property name="margin-bottom">1</property>
+																		                          <property name="spacing">15</property>
+																		                          <child>
+																		                              <object class="GtkLabel">
+																		                                  <property name="label" translatable="yes">Here is the additional text you want to add.</property>
+																		                                  <property name="halign">center</property>
+																		                              </object>
+																		                          </child>
+																		                            <child>
+																		                                <object class="GtkButton" id="system_update_button">
+																		                                    <property name="label" translatable="yes">Check Update</property>
+																		                                    <property name="halign">center</property>
+																		                                    <style>
+																		                                        <class name="security-button"/>
+																		                                    </style>
+																		                                </object>
+																		                            </child>
+																		                      </object>
+																		                  </child>
+																		              </object>
+																		          </property>
+																		      </object>
+																		  </property>
+																	</object>
+															</child>
+													</object>
+											</property>
+									</object>
+								</child>
+                <child>
+  <object class="GtkStackPage">
+    <property name="name">help</property>
+    <property name="title" translatable="yes">Help</property>
+    <property name="child">
+      <object class="AdwNavigationView">
+        <child>
+          <object class="AdwNavigationPage">
+            <property name="title">Help</property>
+            <property name="child">
+              <object class="AdwToolbarView">
+                <child type="top">
+                  <object class="AdwHeaderBar">
+                    <property name="show-start-title-buttons">false</property>
+                    <property name="show-end-title-buttons">false</property>
+                  </object>
+                </child>
+                <property name="content">
+                  <object class="AdwStatusPage">
+                    <property name="icon-name">help-about</property>
+                    <property name="title" translatable="yes">Need help? We're here for you.</property>
+                    <property name="description" translatable="yes">Choose from the options below to get the assistance you need.</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin-start">1</property>
+                        <property name="margin-end">1</property>
+                        <property name="margin-top">1</property>
+                        <property name="margin-bottom">1</property>
+                        <property name="spacing">15</property>
+                        <child>
+                          <object class="GtkButton" id="warranty_check_button">
+                            <property name="label" translatable="yes">Lenovo Warranty Check</property>
+                            <property name="halign">center</property>
+                            <property name="action-name">navigation.push</property>
+                            <property name="action-target">'warranty-check'</property>
+                            <style>
+                              <class name="help-button"/>
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="update_check_button">
+                            <property name="label" translatable="yes">Checking for updates in Linux</property>
+                            <property name="halign">center</property>
+                            <property name="action-name">navigation.push</property>
+                            <property name="action-target">'update-info'</property>
+                            <style>
+                              <class name="help-button"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+              </object>
+            </property>
+          </object>
+        </child>
+        <child>
+  <object class="AdwNavigationPage">
+    <property name="tag">warranty-check</property>
+    <property name="title">Warranty Check</property>
+    <property name="child">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar">
+            <property name="show-start-title-buttons">false</property>
+            <property name="show-end-title-buttons">false</property>
+          </object>
+        </child>
+        <property name="content">
+          <object class="AdwStatusPage">
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="spacing">15</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">
+                      <![CDATA[
+                      1. Go to <a href="https://smartsupport.lenovo.com/us/en/warranty-lookup#/">Lenovo Warranty Lookup</a> in your web browser.
+                      2. Paste your device's serial number into the field (you can copy it from the Home page!).
+                      3. View the results.
+                      ]]>
+                    </property>
+                    <property name="use-markup">true</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </property>
+      </object>
+    </property>
+  </object>
+</child>
+
+<child>
+  <object class="AdwNavigationPage">
+    <property name="tag">update-info</property>
+    <property name="title">Update Information</property>
+    <property name="child">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar">
+            <property name="show-start-title-buttons">false</property>
+            <property name="show-end-title-buttons">false</property>
+          </object>
+        </child>
+        <property name="content">
+          <object class="AdwStatusPage">
+            <property name="title" translatable="yes">Linux Update Guide</property>
+            <property name="description" translatable="yes">How to update your Linux distribution</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="spacing">20</property>
+                <property name="halign">center</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">To update your Linux distribution, follow these steps:</property>
+                    <property name="wrap">true</property>
+                    <property name="justify">center</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label" translatable="yes">1. Open a terminal</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label" translatable="yes">2. Update package lists:</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">horizontal</property>
+                        <property name="spacing">5</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Debian/Ubuntu:</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="text">sudo apt update</property>
+                            <property name="editable">false</property>
+                            <property name="can-focus">false</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">horizontal</property>
+                        <property name="spacing">5</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Fedora:</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="text">sudo dnf update</property>
+                            <property name="editable">false</property>
+                            <property name="can-focus">false</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">horizontal</property>
+                        <property name="spacing">5</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Arch:</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="text">sudo pacman -Syy</property>
+                            <property name="editable">false</property>
+                            <property name="can-focus">false</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <!-- Benzer şekilde, diğer komutlar için de GtkEntry'ler eklenebilir -->
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">Note: Commands may vary slightly depending on your specific Linux distribution version.</property>
+                    <property name="wrap">true</property>
+                    <property name="justify">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </property>
+      </object>
+    </property>
+  </object>
+</child>
+      </object>
+    </property>
+  </object>
+</child>
+              </object>
+            </child>
+          </object>
+        </property>
+      </object>
+				</property>
+			</object>
+    </property>
+</template>
+	<menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About Lenovo Vantage</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

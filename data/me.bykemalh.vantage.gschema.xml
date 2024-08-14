@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="lenovo-vantage">
+	<schema id="me.bykemalh.vantage" path="/me/bykemalh/vantage/">
+	</schema>
+</schemalist>

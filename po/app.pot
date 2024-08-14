@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-31 21:51+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/me.bykemalh.vantage.desktop.in:3
+msgid "lenovo-vantage"
+msgstr ""
+
+#: data/me.bykemalh.vantage.metainfo.xml.in:7
+msgid "No description"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:19
+msgid "Menu"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:40
+msgid "Home"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:66
+msgid "Serial Number:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:69 src/lenovo-vantage-window.ui:93
+#: src/lenovo-vantage-window.ui:109
+msgid "Copy"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:77
+msgid "Show"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:90
+msgid "Model Number:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:106
+msgid "BIOS Version:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:124
+msgid "Usage"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:130
+msgid "Unknown"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:138
+msgid "1.0"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:146 src/lenovo-vantage-window.ui:233
+msgid "CPU:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:162 src/lenovo-vantage-window.ui:243
+msgid "Memory:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:182
+msgid "System Information"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:188
+msgid "OS:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:193
+msgid "Host:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:198
+msgid "Kernel:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:203
+msgid "Uptime:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:208
+msgid "Packages:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:213
+msgid "Shell:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:218
+msgid "Resolution:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:223
+msgid "DE:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:228
+msgid "WS:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:238
+msgid "GPU:"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:257
+msgid "My Device"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:280
+msgid "Power Mode"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:295
+msgid "Extreme Performance"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:302
+msgid "true"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:309
+msgid "Intelligent Cooling"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:323
+msgid "Battery Saver"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:349
+msgid "Keyboard Light"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:364
+msgid "Off"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:378
+msgid "Low"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:392
+msgid "High"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:415
+msgid "Device Controls"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:430
+msgid "Wi-Fi"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:444
+msgid "Microphone"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:458
+msgid "Camera"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:472
+msgid "Conservation Mode"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:486
+msgid "Always-On USB"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:500
+msgid "FN Lock"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:514
+msgid "Touchpad"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:541
+msgid "Settings"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:547
+msgid "Settings Page"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:557
+msgid "Security"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:563
+msgid "Security Page"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:573
+msgid "Help"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:579
+msgid "Help Page"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:598
+msgid "_Preferences"
+msgstr ""
+
+#: src/lenovo-vantage-window.ui:602
+msgid "_About Lenovo Vantage"
+msgstr ""

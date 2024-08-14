@@ -1,0 +1,224 @@
+# Turkish translations for PACKAGE package.
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kemal Hafizoglu <neiizvesten253@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-31 21:51+0300\n"
+"PO-Revision-Date: 2024-07-31 22:08+0300\n"
+"Last-Translator: Kemal Hafizoglu <neiizvesten253@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#: data/me.bykemalh.vantage.desktop.in:3
+msgid "lenovo-vantage"
+msgstr "lenovo-vantage"
+
+#: data/me.bykemalh.vantage.metainfo.xml.in:7
+msgid "No description"
+msgstr "Açıklama Yok"
+
+#: src/lenovo-vantage-window.ui:19
+msgid "Menu"
+msgstr "Menü"
+
+#: src/lenovo-vantage-window.ui:40
+msgid "Home"
+msgstr "Ana Sayfa"
+
+#: src/lenovo-vantage-window.ui:66
+msgid "Serial Number:"
+msgstr "Seri Numarası:"
+
+#: src/lenovo-vantage-window.ui:69 src/lenovo-vantage-window.ui:93
+#: src/lenovo-vantage-window.ui:109
+msgid "Copy"
+msgstr "Kopyala"
+
+#: src/lenovo-vantage-window.ui:77
+msgid "Show"
+msgstr "Göster"
+
+#: src/lenovo-vantage-window.ui:90
+msgid "Model Number:"
+msgstr "Model Numarası:"
+
+#: src/lenovo-vantage-window.ui:106
+msgid "BIOS Version:"
+msgstr "BIOS Sürümü:"
+
+#: src/lenovo-vantage-window.ui:124
+msgid "Usage"
+msgstr "Kullanım"
+
+#: src/lenovo-vantage-window.ui:130
+msgid "Unknown"
+msgstr "Belirsiz"
+
+#: src/lenovo-vantage-window.ui:138
+msgid "1.0"
+msgstr "1.0"
+
+#: src/lenovo-vantage-window.ui:146 src/lenovo-vantage-window.ui:233
+msgid "CPU:"
+msgstr "İşlemci:"
+
+#: src/lenovo-vantage-window.ui:162 src/lenovo-vantage-window.ui:243
+msgid "Memory:"
+msgstr "Bellek:"
+
+#: src/lenovo-vantage-window.ui:182
+msgid "System Information"
+msgstr "Sistem Bilgisi"
+
+#: src/lenovo-vantage-window.ui:188
+msgid "OS:"
+msgstr "İşletim Sİstemi:"
+
+#: src/lenovo-vantage-window.ui:193
+msgid "Host:"
+msgstr "Host:"
+
+#: src/lenovo-vantage-window.ui:198
+msgid "Kernel:"
+msgstr "Kernel:"
+
+#: src/lenovo-vantage-window.ui:203
+msgid "Uptime:"
+msgstr "Çalışma Süresi:"
+
+#: src/lenovo-vantage-window.ui:208
+msgid "Packages:"
+msgstr "Paketler:"
+
+#: src/lenovo-vantage-window.ui:213
+msgid "Shell:"
+msgstr "Kabuk:"
+
+#: src/lenovo-vantage-window.ui:218
+msgid "Resolution:"
+msgstr "Çözünürlük:"
+
+#: src/lenovo-vantage-window.ui:223
+msgid "DE:"
+msgstr "Masaüstü Ortamı:"
+
+#: src/lenovo-vantage-window.ui:228
+msgid "WS:"
+msgstr "Pencere Yöneticisi:"
+
+#: src/lenovo-vantage-window.ui:238
+msgid "GPU:"
+msgstr "Ekran Kartı:"
+
+#: src/lenovo-vantage-window.ui:257
+msgid "My Device"
+msgstr "Cihazım"
+
+#: src/lenovo-vantage-window.ui:280
+msgid "Power Mode"
+msgstr "Güç Modu:"
+
+#: src/lenovo-vantage-window.ui:295
+msgid "Extreme Performance"
+msgstr "Yüksek Performans"
+
+#: src/lenovo-vantage-window.ui:302
+msgid "true"
+msgstr "true"
+
+#: src/lenovo-vantage-window.ui:309
+msgid "Intelligent Cooling"
+msgstr "Akıllı Soğutma"
+
+#: src/lenovo-vantage-window.ui:323
+msgid "Battery Saver"
+msgstr "Pil Tasarrufu"
+
+#: src/lenovo-vantage-window.ui:349
+msgid "Keyboard Light"
+msgstr "Klavye Aydınlatması"
+
+#: src/lenovo-vantage-window.ui:364
+msgid "Off"
+msgstr "Kapalı"
+
+#: src/lenovo-vantage-window.ui:378
+msgid "Low"
+msgstr "Düşük"
+
+#: src/lenovo-vantage-window.ui:392
+msgid "High"
+msgstr "Yüksek"
+
+#: src/lenovo-vantage-window.ui:415
+msgid "Device Controls"
+msgstr "Cihaz Kontrolleri"
+
+#: src/lenovo-vantage-window.ui:430
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: src/lenovo-vantage-window.ui:444
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: src/lenovo-vantage-window.ui:458
+msgid "Camera"
+msgstr "Kamera"
+
+#: src/lenovo-vantage-window.ui:472
+msgid "Conservation Mode"
+msgstr "Muhafaza Modu"
+
+#: src/lenovo-vantage-window.ui:486
+msgid "Always-On USB"
+msgstr "Daima Açık USB"
+
+#: src/lenovo-vantage-window.ui:500
+msgid "FN Lock"
+msgstr "FN Lock"
+
+#: src/lenovo-vantage-window.ui:514
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: src/lenovo-vantage-window.ui:541
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/lenovo-vantage-window.ui:547
+msgid "Settings Page"
+msgstr "Ayarlar Sayfası "
+
+#: src/lenovo-vantage-window.ui:557
+msgid "Security"
+msgstr "Güvenlik"
+
+#: src/lenovo-vantage-window.ui:563
+msgid "Security Page"
+msgstr "Güvenlik Sayfası"
+
+#: src/lenovo-vantage-window.ui:573
+msgid "Help"
+msgstr "Yardım"
+
+#: src/lenovo-vantage-window.ui:579
+msgid "Help Page"
+msgstr "Yardım Sayfası"
+
+#: src/lenovo-vantage-window.ui:598
+msgid "_Preferences"
+msgstr "_Tercihler"
+
+#: src/lenovo-vantage-window.ui:602
+msgid "_About Lenovo Vantage"
+msgstr "Lenovo Vantage Hakkında"

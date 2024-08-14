@@ -1,2 +1,3 @@
-# vantage
-Lenovo Vantage for Linux
+# lenovo-vantage
+
+A description of this project.
