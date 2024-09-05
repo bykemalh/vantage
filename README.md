@@ -60,12 +60,3 @@ Bu proje **GPLv3** lisansı altında lisanslanmıştır. Daha fazla bilgi için 
 
 Geri bildirim veya sorularınız için [bykemalh@gmail.com](mailto:bykemalh@gmail.com) adresinden benimle iletişime geçebilirsiniz.
 ```
-
-### Açıklamalar:
-- **Özellikler** bölümünde uygulamanın sunduğu temel işlevler özetlenmiştir.
-- **Bilinen Hatalar** bölümünde kullanıcıları bilgilendirmek için mevcut sorunlar listelenmiştir.
-- **Gereksinimler** kısmında uygulamanın düzgün çalışabilmesi için gerekli olan yazılım ve kütüphaneler belirtilmiştir.
-- **Kurulum** bölümünde uygulamanın nasıl kurulacağı adım adım açıklanmıştır.
-- **Katkıda Bulunma** ve **Lisans** bölümleri, açık kaynak projeler için standart bölümlerdir ve projeye nasıl katkıda bulunulabileceğini açıklar.
-
-Bu README dosyasını projenizin kök dizinine ekleyerek GitHub'da projeyi tanıtabilirsiniz.
