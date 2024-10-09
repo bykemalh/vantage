@@ -58,5 +58,5 @@ Bu proje **GPLv3** lisansı altında lisanslanmıştır. Daha fazla bilgi için 
 
 ## İletişim
 
-Geri bildirim veya sorularınız için [bykemalh@gmail.com](mailto:bykemalh@gmail.com) adresinden benimle iletişime geçebilirsiniz.
+Geri bildirim veya sorularınız için [bykemalh@gmail.com](bykemalh.me) adresinden benimle iletişime geçebilirsiniz.
 ```
